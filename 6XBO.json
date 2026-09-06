@@ -1,0 +1,26 @@
+{
+  "dialect": "alphafold3",
+  "version": 2,
+  "name": "6XBO-AF3",
+  "sequences": [
+    {
+      "protein": {
+        "id": "A",
+        "sequence": "MAPARENVSLFFKLYCLTVMTLVAAAYTVALRYTRTTAEELYFSTTAVCITEVIKLLISVGLLAKETGSLGRFKASLSENVLGSPKELAKLSVPSLVYAVQNNMAFLALSNLDAAVYQVTYQLKIPCTALCTVLMLNRTLSKLQWISVFMLCGGVTLVQWKPAQATKVVVAQNPLLGFGAIAIAVLCSGFAGVYFEKVLKSSDTSLWVRNIQMYLSGIVVTLAGTYLSDGAEIQEKGFFYGYTYYVWFVIFLASVGGLYTSVVVKYTDNIMKGFSAAAAIVLSTIASVLLFGLQITLSFALGALLVCVSIYLYGLPRQDTTSNSLEVLFQ"
+      }
+    },
+    {
+      "ligand": {
+        "id": "B",
+        "ccdCodes": [
+          "5MC"
+        ]
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "bondedAtomPairs": null,
+  "userCCDPath": "/storage/chem/lfsmgr/SRG/Packages/CCD2MD/CCD2MD.cif"
+}
