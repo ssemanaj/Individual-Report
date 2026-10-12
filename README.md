@@ -3,6 +3,8 @@ Guide to reproducing report results
 
 This document provides step-by-step instructions to reproduce the quantitative result reported in this work: the protein backbone and ligand pose RMSD (relative to the experimental structure) for the CMP-sialic acid transporter bound to 5-methyl CMP (PDB 6XBO), including the reproducibility statistic (mean &plusmn; SD across three independent pipeline runs).
 
+<img width="2818" height="1663" alt="image" src="https://github.com/user-attachments/assets/77a00f0f-4420-4a2f-961e-c0ce781c42ec" />
+
 ## Software available note
 This work used a pre-release build of the CCD2MD package which includes features not yet available via the standard `pip install CCD2MD`installation method documented by the package. Because this build cannot be currently installed independently, a full snapshot of the exact package is provided as `ccd2md_testing_snapshot.tar.gz` in this repository, capturing both code and reference data.
 
@@ -68,6 +70,9 @@ chmod +x automate_script.sh
 ```
 ./automate_script.sh -i 6XBO-AF3_model.cif -n 6XBO-5MC -g 5MC -Mem
 ```
+
+Pipeline outline:
+<img width="988" height="325" alt="image" src="https://github.com/user-attachments/assets/b735636e-b30c-4210-9bd1-304bfb3cfeb5" />
 
 This produces `final_system.pdb` and `topol.top` in the working directory, representing the membrane-embedded, ligand-reinserted atomistic system.
 
