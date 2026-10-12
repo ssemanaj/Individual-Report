@@ -73,6 +73,7 @@ chmod +x automate_script.sh
 
 Pipeline outline:
 <img width="988" height="325" alt="image" src="https://github.com/user-attachments/assets/b735636e-b30c-4210-9bd1-304bfb3cfeb5" />
+The pipeline embeds the protein in a membrane and conserves ligand position through this process, generating topology for all components of the system (membrane, protein, ligands, ions, water) ready to use for MD with GROMACS.
 
 This produces `final_system.pdb` and `topol.top` in the working directory, representing the membrane-embedded, ligand-reinserted atomistic system.
 
@@ -117,6 +118,6 @@ print(f'Ligand:  {stats.mean(ligand):.3f} +/- {stats.stdev(ligand):.3f} A')
 ```
 The reported results are
 
-`Protein: 4.086 $\pm$ 0.010 Å`
+`Protein: 4.086 ± 0.010 Å`
 
-`Ligand: 1.371 $\pm$ 0.202 Å`
+`Ligand: 1.371 ± 0.202 Å`
