@@ -61,6 +61,8 @@ python run_alphafold.py --json_path 6XBO.json --output_dir <output_dir>
 ```
 3. Output: `6XBO-AF3_model.cif` (to be used as input for the automated pipeline in the next step)
 
+(alternatively, `6XBO-AF3_model.cif` is included in this repository)
+
 ## Step 2: Run the automated pipeline
 
 ```
