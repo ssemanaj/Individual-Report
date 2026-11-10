@@ -20,6 +20,16 @@ pip install vermouth
 >tar -xzf ccd2md_testing_snapshot.tar.gz\
 cp -r ccd2md/ /path/to/new/env/lib/python3.12/site-packages
 
+>cat > $CONDA_PREFIX/bin/ccd2at_hdf5 << 'EOF'\
+#!/usr/bin/env bash\
+exec python -m ccd2md.ccd2at_hdf5_min "$@"\
+EOF\
+\
+chmod +x $CONDA_PREFIX/bin/ccd2at_hdf5\
+\
+printf '#!/usr/bin/env bash\nexec mempro "$@"\n' > $CONDA_PREFIX/bin/MemPrO\
+chmod +x $CONDA_PREFIX/bin/MemPrO
+
 ## Step 1: Generate the AlphaFold3 prediction
 1. Build an environment fold AlphaFold3 using the installation guide: https://github.com/google-deepmind/alphafold3/blob/main/docs/installation.md
 2. Usw the provided .json file as input (6XBO.json):
